@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Nanum+Gothic:wght@400;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>My weather application</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <form id="search-form">
+          <div class="row">
+            <input
+              type="search"
+              id="search-input"
+              placeholder="Enter a city.."
+              class="search-input"
+              required
+            />
+            <input type="submit" value="Search" class="search-button" />
+          </div>
+        </form>
+      </header>
+      <main>
+        <hr />
+        <div class="current-weather row">
+          <div>
+            <h1 id="current-city">Paris</h1>
+            <p>
+              <span id="current-time">Saturday 15:32</span> , moderate rain
+              <br />
+              Humidity: <strong class="humidity">87</strong><strong>%</strong>,
+              Wind:
+              <strong>7.2km/h</strong>
+            </p>
+          </div>
+          <div class="current-temperature row">
+            <span class="weather-icon">☀️</span>
+            <span class="temperature"><h1 id="current-temp">14</h1></span>
+            <span class="unit">°C</span>
+          </div>
+        </div>
+        <hr />
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="#" target="_blank">Malgorzata Grajewska</a> and is
+          <a href="#" target="_blank"> on GitHub</a> and
+          <a href="#" target="_blank">hosted on Netlify</a>
+        </p>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
